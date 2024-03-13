@@ -24,7 +24,7 @@ except FileNotFoundError:
 
 try:
     global model
-    model = joblib.load(r'C:\Users\Sharda Prasad Maurya.LAPTOP-4MVRVONI\Desktop\projects\pro delhi house\sever\delhi_house_price_prediction')
+    model = joblib.load(r'delhi_house_price_prediction')
     print("Model loaded successfully!")
 except FileNotFoundError:
     print("Model file not found. Please provide the correct file path.")
