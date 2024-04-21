@@ -17,7 +17,7 @@ class Item(BaseModel):
 app = FastAPI()
 
 try:
-    with open("columns.json", "r") as file:
+    with open(r"C:\Users\Sharda Prasad Maurya.LAPTOP-4MVRVONI\Desktop\study\ml\PROJECTS\Delhi-House-Price-Prediction\server\columns.json", "r") as file:
         data = json.load(file)['data_columns']
 except FileNotFoundError:
     print({"error": "File not found"})
@@ -45,7 +45,12 @@ async def hello(items :Item):
     global type
     type = items.type 
     
-    return {'location':items.location,'area':items.area,'bed':items.bed,'bath':items.parking,'parking':items.parking,'type of house':items.type}
+    return {'location':items.location,
+            'area':items.area,
+            'bed':items.bed,
+            'bath':items.bath,
+            'parking':items.parking,
+            'type of house':items.type}
 
 
 @app.get('/prediction')
