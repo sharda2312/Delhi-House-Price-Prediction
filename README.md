@@ -4,7 +4,7 @@ This repository contains a machine learning model developed to predict house pri
 
 ## Project Summary
 
-1. **Data Cleaning and Preprocessing:** The dataset was cleaned and preprocessed. This involved handling missing values, encoding categorical variables, and scaling numerical features.
+1. **Data Cleaning and Preprocessing:** The dataset(Containing the dataset with 8k rows of data features.) was cleaned and preprocessed. This involved handling missing values, encoding categorical variables, and scaling numerical features.
 2. **Feature Engineering:** Outliers were identified and removed to prevent them from skewing the model's predictions.
 3. **Model Training:** Multiple regression models were trained using the preprocessed data. This included experimenting with different algorithms and techniques to find the most suitable model for the task.
 4. **Hyperparameter Tuning:** Grid Search Cross-Validation (CV) was employed to fine-tune the hyperparameters of the selected models. This process helped optimize the models' performance and generalization ability.
@@ -19,11 +19,10 @@ This repository contains a machine learning model developed to predict house pri
 4. **delhi_house_price_prediction.ipynb:** Jupyter Notebook containing the code for data preprocessing, model training, and evaluation.
 
 ### Server folder 
-1. **README.md:** Provides an overview of the project, its objectives, and key achievements.
-2. **columns.json:** JSON file containing the column names used for data preprocessing.
-3. **delhi_house_price_prediction.joblib:** Serialized machine learning model file.
-4. **app.py:** FastAPI server code for handling prediction requests.
-5. **requirements.txt:** File listing all required Python dependencies for running the project.
+1. **columns.json:** JSON file containing the column names used for data preprocessing.
+2. **delhi_house_price_prediction.joblib:** Serialized machine learning model file.
+3. **app.py:** FastAPI server code for handling prediction requests.
+4. **requirements.txt:** File listing all required Python dependencies for running the project.
 
 ## Usage
 To use the deployed model for house price prediction:
@@ -32,4 +31,5 @@ To use the deployed model for house price prediction:
 - Navigate to the server directory.
 - Install the required Python dependencies listed in requirements.txt.
 - Start the FastAPI server by running **uvicorn main:app --host 0.0.0.0 --port 8000** in the terminal.
-- Send HTTP POST requests to the /get-me-data endpoint with input data in the specified format to receive predictions.
+- Send HTTP POST requests to the /get-me-data endpoint with to send data with input features.
+- Send HTTP GET request to the /prediction endpoint to get predicted value as output.
