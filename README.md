@@ -1,6 +1,6 @@
 # Delhi House Price Prediction
 
-This repository contains a machine learning model developed to predict house prices in Delhi, India. The model utilizes various regression algorithms, including Linear Regression, Decision Tree, and Lasso Regression, to accurately estimate house prices based on input features.
+This repository contains a machine learning model developed to predict house prices of different locations of Delhi, India. The model utilizes various regression algorithms, including Linear Regression, Decision Tree, and Lasso Regression, to accurately estimate house prices based on input features.
 
 ## Project Summary
 
