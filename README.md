@@ -34,14 +34,14 @@ To use the deployed model for house price prediction:
 - Send HTTP POST requests to the /get-me-data endpoint with to send data with input features.
       **json format post request example**
 
-        ```{
+        {
         "location": "ahinsa khand 2, ghaziabad, delhi ncr",
         "area": 1500,
         "bed": 3,
         "bath": 2,
         "parking": true,
         "type of house": false
-        }```
+        }
 
 - **columns.json** contains all the locations accepted by model.
 
