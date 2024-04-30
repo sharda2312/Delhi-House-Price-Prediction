@@ -37,10 +37,10 @@ To use the deployed model for house price prediction:
         {
         "location": "ahinsa khand 2, ghaziabad, delhi ncr",
         "area": 1500,
-        "bed": 3,
-        "bath": 2,
+        "bath": 3,
+        "bed": 2,
         "parking": true,
-        "type of house": false
+        "type": false
         }
 
 - **columns.json** contains all the locations accepted by model.
