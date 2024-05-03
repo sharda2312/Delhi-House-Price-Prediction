@@ -30,31 +30,15 @@ except FileNotFoundError:
     print("Model file not found. Please provide the correct file path.")
     
         
-@app.post('/get-me-data')
+@app.post('/prediction')
 async def hello(items :Item):
-    global location
     location = items.location
-    global area 
     area = items.area
-    global bed
     bed = items.bed
-    global bath
     bath = items.bath
-    global parking
     parking = items.parking
-    global type
     type = items.type 
     
-    return {'location':items.location,
-            'area':items.area,
-            'bed':items.bed,
-            'bath':items.bath,
-            'parking':items.parking,
-            'type of house':items.type}
-
-
-@app.get('/prediction')
-def hello():
     try:
         ind = data.index(location)
     except:
@@ -70,4 +54,3 @@ def hello():
         x[ind] = 1
     
     return model.predict([x])[0]
-
