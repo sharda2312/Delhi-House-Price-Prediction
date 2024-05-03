@@ -17,7 +17,7 @@ class Item(BaseModel):
 app = FastAPI()
 
 try:
-    with open(r"C:\Users\Sharda Prasad Maurya.LAPTOP-4MVRVONI\Desktop\study\ml\PROJECTS\Delhi-House-Price-Prediction\server\columns.json", "r") as file:
+    with open(r"columns.json", "r") as file:
         data = json.load(file)['data_columns']
 except FileNotFoundError:
     print({"error": "File not found"})
