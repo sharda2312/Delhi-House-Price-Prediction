@@ -31,7 +31,7 @@ To use the deployed model for house price prediction:
 - Navigate to the server directory.
 - Install the required Python dependencies listed in requirements.txt.
 - Start the FastAPI server by running **uvicorn main:app --host 0.0.0.0 --port 8000** in the terminal.
-- Send HTTP POST requests to the /get-me-data endpoint with to send data with input features.
+- Send HTTP POST requests to the /prediction endpoint with to send data with input features to get predicted value as output.
       **json format post request example**
 
         {
@@ -44,5 +44,3 @@ To use the deployed model for house price prediction:
         }
 
 - **columns.json** contains all the locations accepted by model.
-
-- after sending the post request Send HTTP GET request to the /prediction endpoint to get predicted value as output.
