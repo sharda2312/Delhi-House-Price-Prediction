@@ -45,4 +45,4 @@ To use the deployed model for house price prediction:
 
 - **columns.json** contains all the locations accepted by model.
 ## Deployed
-![deployment image](https://drive.google.com/file/d/1Nyp31n8wQzL07bWkhYYA_J5iMFORSuc1/view?usp=sharing)
+![deployment image](https://drive.google.com/uc?export=view&id=1Nyp31n8wQzL07bWkhYYA_J5iMFORSuc1)
